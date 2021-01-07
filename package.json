@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "node Scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "marked": "^0.3.6",
@@ -14,6 +15,7 @@
     "vue": "^2.1.10"
   },
   "devDependencies": {
+    "execa": "latest",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
